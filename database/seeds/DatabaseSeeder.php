@@ -11,6 +11,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call('WidgetTableSeeder');
+    }
+}
+
+class WidgetTableSeeder extends Seeder
+{
+    public function run()
+    {
+        App\Widget::truncate();
+
+        factory(App\Widget::class, 20)->create();
     }
 }
