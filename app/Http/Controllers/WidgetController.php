@@ -10,12 +10,11 @@ class WidgetController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
     public function index()
     {
-        $widgets = Widget::all();
-        return response()->json($widgets);
+        return Widget::all();
 
     }
 
@@ -47,7 +46,6 @@ class WidgetController extends Controller
     {
         $widget = Widget::whereSlug($slug)->firstOrFail();
         return response()->json($widget);
-
     }
 
     /**
