@@ -1,3 +1,14 @@
+This is a demo of a simple crud json rest api built with Laravel. 
+Check out the client built with react and redux [here](https://github.com/gpspake/laravel-api-demo-client).
+
+## Getting started
+```bash
+git clone git@github.com:gpspake/laravel-api-demo-client.git
+cd laravel-api-demo-client
+composer install
+vagrant up #don't forget to update your hosts file
+```
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
